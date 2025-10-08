@@ -1,0 +1,17 @@
+site_name: My MkDocs Site
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - Contributing: contributing.md
+  - Assets:
+      - Hive connection using Generic JDBC: assets/Hive connection using Generic JDBC.pdf
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
