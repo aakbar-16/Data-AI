@@ -21,6 +21,5 @@ To get started with this project, please refer to the following sections:
 - [Installation Guide](installation.md)
 - [Usage Instructions](usage.md)
 - [Contribution Guidelines](contributing.md)
-- [View the PDF](assets/Hive connection using Generic JDBC.pdf){target="_blank"}
 
 Thank you for visiting the documentation site!

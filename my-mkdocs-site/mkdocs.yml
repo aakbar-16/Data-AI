@@ -1,13 +1,21 @@
 site_name: My MkDocs Site
 theme:
   name: material
+  palette:
+    scheme: default
+    primary: black
+    accent: black
 nav:
   - Home: index.md
   - Installation: installation.md
-  - Usage: usage.md
-  - Contributing: contributing.md
   - Assets:
-      - Hive connection using Generic JDBC: assets/Hive connection using Generic JDBC.pdf
+      - Troubleshooting:
+          - Hive connection using Generic JDBC: assets/Troubleshooting/Hive connection using Generic JDBC.md
+      - CP4D:
+          - Increase the maximum heap size for CP4D: assets/CP4D/Increase time out setting for CPD API.md
+          - How to update the resource limits for zen-metastore-edb cluster  in CP4D: assets/CP4D/How to update the resource limits for zen-metastore-edb cluster.md
+      - Watsonx:
+          - How to update the resource limits for watsonx-metastore-edb cluster in CP4D: assets/Watsonx/How to update the resource limits for watsonx-metastore-edb cluster in CP4D.md    
 markdown_extensions:
   - admonition
   - codehilite
