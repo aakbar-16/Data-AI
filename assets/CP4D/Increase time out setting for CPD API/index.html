@@ -9,23 +9,25 @@
       
       
       
+        <link rel="prev" href="../../Troubleshooting/Hive%20connection%20using%20Generic%20JDBC/">
       
-        <link rel="next" href="assets/Troubleshooting/Hive%20connection%20using%20Generic%20JDBC/">
+      
+        <link rel="next" href="../How%20to%20update%20the%20resource%20limits%20for%20zen-metastore-edb%20cluster/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
     
     
       
-        <title>My MkDocs Site</title>
+        <title>Increase the maximum heap size for CP4D - My MkDocs Site</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.2a3383ac.min.css">
+      <link rel="stylesheet" href="../../stylesheets/main.2a3383ac.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -68,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-my-mkdocs-site" class="md-skip">
+        <a href="#increase-time-out-setting-for-cpd-api" class="md-skip">
           Skip to content
         </a>
       
@@ -84,7 +86,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="My MkDocs Site" class="md-header__button md-logo" aria-label="My MkDocs Site" data-md-component="logo">
+    <a href="../../.." title="My MkDocs Site" class="md-header__button md-logo" aria-label="My MkDocs Site" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -104,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Increase the maximum heap size for CP4D
             
           </span>
         </div>
@@ -182,7 +184,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="My MkDocs Site" class="md-nav__button md-logo" aria-label="My MkDocs Site" data-md-component="logo">
+    <a href="../../.." title="My MkDocs Site" class="md-nav__button md-logo" aria-label="My MkDocs Site" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -197,32 +199,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Home
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -233,53 +213,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      Getting Started
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Features
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
-    <span class="md-ellipsis">
-      Links
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -291,7 +224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="installation.md" class="md-nav__link">
+      <a href="../../../installation.md" class="md-nav__link">
         
   
   
@@ -310,18 +243,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -337,7 +272,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Assets
@@ -389,7 +324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="assets/Troubleshooting/Hive%20connection%20using%20Generic%20JDBC/" class="md-nav__link">
+      <a href="../../Troubleshooting/Hive%20connection%20using%20Generic%20JDBC/" class="md-nav__link">
         
   
   
@@ -417,18 +352,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -444,7 +381,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             CP4D
@@ -455,10 +392,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="assets/CP4D/Increase%20time%20out%20setting%20for%20CPD%20API/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Increase the maximum heap size for CP4D
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -469,6 +428,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-identify-the-zen-extension-to-be-edited" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Identify the zen-extension to be edited
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-put-the-relevant-custom-resource-into-maintenance-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Put the relevant custom resource into maintenance mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-add-the-section-to-the-location-part" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Add the section to the location part
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-validate-the-changes-applied" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Validate the changes applied
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -481,7 +496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="assets/CP4D/How%20to%20update%20the%20resource%20limits%20for%20zen-metastore-edb%20cluster/" class="md-nav__link">
+      <a href="../How%20to%20update%20the%20resource%20limits%20for%20zen-metastore-edb%20cluster/" class="md-nav__link">
         
   
   
@@ -550,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="assets/Watsonx/How to update the resource limits for watsonx-metastore-edb cluster in CP4D.md" class="md-nav__link">
+      <a href="../../Watsonx/How to update the resource limits for watsonx-metastore-edb cluster in CP4D.md" class="md-nav__link">
         
   
   
@@ -608,27 +623,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
+  <a href="#1-identify-the-zen-extension-to-be-edited" class="md-nav__link">
     <span class="md-ellipsis">
-      Getting Started
+      1. Identify the zen-extension to be edited
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
+  <a href="#2-put-the-relevant-custom-resource-into-maintenance-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      Features
+      2. Put the relevant custom resource into maintenance mode
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
+  <a href="#3-add-the-section-to-the-location-part" class="md-nav__link">
     <span class="md-ellipsis">
-      Links
+      3. Add the section to the location part
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-validate-the-changes-applied" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Validate the changes applied
     </span>
   </a>
   
@@ -650,28 +674,65 @@
 
 
 
-<h1 id="welcome-to-my-mkdocs-site">Welcome to My MkDocs Site<a class="headerlink" href="#welcome-to-my-mkdocs-site" title="Permanent link">&para;</a></h1>
-<p>This is the homepage of the documentation site created using MkDocs. Here you can find information about the project, its features, and how to get started.</p>
-<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
-<p>To get started with this project, please refer to the following sections:</p>
+<h1 id="increase-time-out-setting-for-cpd-api">Increase time out setting for CPD API<a class="headerlink" href="#increase-time-out-setting-for-cpd-api" title="Permanent link">&para;</a></h1>
+<h2 id="1-identify-the-zen-extension-to-be-edited">1. Identify the zen-extension to be edited<a class="headerlink" href="#1-identify-the-zen-extension-to-be-edited" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Installation</strong>: Instructions on how to install the necessary dependencies.</li>
-<li><strong>Usage</strong>: Guidelines on how to use the project effectively.</li>
-<li><strong>Contributing</strong>: Information on how to contribute to the project.</li>
+<li>Go into the ibm-ngix pod</li>
 </ul>
-<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>oc<span class="w"> </span>rsh<span class="w"> </span>ibm-nginx-xxx
+</code></pre></div>
+
 <ul>
-<li>Easy to use and configure.</li>
-<li>Supports Markdown for documentation.</li>
-<li>Customizable themes and layouts.</li>
+<li>Go to the nginx folder</li>
 </ul>
-<h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
+<p><code>proxy_read_timeout</code>
+<code>proxy_send_timeout</code></p>
 <ul>
-<li><a href="installation.md">Installation Guide</a></li>
-<li><a href="usage.md">Usage Instructions</a></li>
-<li><a href="contributing/">Contribution Guidelines</a></li>
+<li>Identify the zen-extension to be edited using grep</li>
 </ul>
-<p>Thank you for visiting the documentation site!</p>
+<p>Grep the zen-extension using the keyword of the API call.</p>
+<p>For example, we can infer the “project” as the keyword from below time out error message:</p>
+<p><img alt="Timeout Error Example" src="../../images/timeouterror.jpg" /></p>
+<p>Use the keyword “project” for searching the zen-extension.</p>
+<div class="codehilite"><pre><span></span><code>grep<span class="w"> </span>project<span class="w"> </span>./*./cpd_ws-base-zen-frontdoor-extension_ie_159.conf
+</code></pre></div>
+
+<p>From the result, we can tell <strong>ws-base-zen-frontdoor-extension</strong> is the zen-extension we should edit.</p>
+<h2 id="2-put-the-relevant-custom-resource-into-maintenance-mode">2. Put the relevant custom resource into maintenance mode<a class="headerlink" href="#2-put-the-relevant-custom-resource-into-maintenance-mode" title="Permanent link">&para;</a></h2>
+<p>As the <strong>ws-base-zen-frontdoor-extension</strong> zen-extension belongs to CCS, we need to put CCS into maintenance mode for preventing it from being reverted back during the reconciliation.</p>
+<div class="codehilite"><pre><span></span><code>oc<span class="w"> </span>patch<span class="w"> </span>-n<span class="w"> </span><span class="si">${</span><span class="nv">PROJECT_CPD_INST_OPERANDS</span><span class="si">}</span><span class="w"> </span>ccs<span class="w"> </span>ccs-cr<span class="w"> </span>--type<span class="w"> </span>merge<span class="w"> </span>--patch<span class="w"> </span><span class="s1">&#39;{&quot;spec&quot;: {&quot;ignoreForMaintenance&quot;: true}}&#39;</span>
+</code></pre></div>
+
+<h2 id="3-add-the-section-to-the-location-part">3. Add the section to the location part<a class="headerlink" href="#3-add-the-section-to-the-location-part" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Have a backup of the zen-extension ws-base-zen-frontdoor-extension</p>
+<p><code>shell
+oc get zenextension ws-base-zen-frontdoor-extension -n ${PROJECT_CPD_INST_OPERANDS} -o yaml &gt; ws-base-zen-frontdoor-extension.yaml</code></p>
+</li>
+<li>
+<p>Edit the zen-extension ws-base-zen-frontdoor-extension</p>
+<p><code>shell
+oc edit zenextension ws-base-zen-frontdoor-extension -n ${PROJECT_CPD_INST_OPERANDS}</code></p>
+</li>
+</ol>
+<p>Add below time out settings to the location corresponding to the API call accordingly:</p>
+<div class="codehilite"><pre><span></span><code>proxy_read_timeout 600s;
+proxy_send_timeout 600s;
+</code></pre></div>
+
+<p>The edition looks like below:</p>
+<p><img alt="Timeout Example" src="../../images/timeout.jpg" /></p>
+<p>Save the changes and wait for the zenextension to become the ‘Completed’ status.</p>
+<div class="codehilite"><pre><span></span><code>oc<span class="w"> </span>get<span class="w"> </span>zenextension<span class="w"> </span>ws-base-zen-frontdoor-extension
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>NAME                            STATUS          AGE
+ws-base-zen-frontdoor-extension Completed       19d
+</code></pre></div>
+
+<h2 id="4-validate-the-changes-applied">4. Validate the changes applied<a class="headerlink" href="#4-validate-the-changes-applied" title="Permanent link">&para;</a></h2>
+<p>Follow similar approaches in Step 1 and check whether the time out setting in the location of the <code>cpd_ws-base-zen-frontdoor-extension_ie_159.conf</code> is with the changes made in previous steps.</p>
 
 
 
@@ -720,10 +781,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>
